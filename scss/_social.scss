@@ -1,0 +1,90 @@
+.social__section__list {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+
+    &__blog,
+    &__twitter,
+    &__linkedin,
+    &__facebook,
+    &__github {
+        list-style: none;
+        padding-left: 60px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        width: 300px;
+        right: -240px;
+        transition: right .5s ease;
+    }
+
+    .social__section__list__link {
+        color: $whiteColor;
+    }
+
+    &__blog {
+        background:  #e17b77;
+    }
+
+    &__blog:hover,
+    &__twitter:hover,
+    &__linkedin:hover,
+    &__facebook:hover,
+    &__github:hover {
+        right: 0;
+    }
+
+    &__blog::before {
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        content: "\f5fc";
+        @include social;
+
+    }
+
+    &__twitter {
+        background: #00aced;
+    }
+
+    &__twitter::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        content: "\f099";
+        @include social;
+    }
+
+    &__linkedin {
+        background: #007bb6;
+    }
+
+    &__linkedin::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        content: "\f0e1";
+        @include social;
+    }
+
+    &__facebook {
+        background: #3b5998;
+    }
+
+    &__facebook::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        content: "\f39e";
+        @include social;
+    }
+
+    &__github {
+        background: #333;
+    }
+
+
+    &__github::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        content: "\f09b";
+        @include social;
+    }
+}

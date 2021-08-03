@@ -1,0 +1,40 @@
+$primaryBackground: #c3cfe2;
+$accentColor: #686de0;
+$whiteColor: #fff;
+$textColor: rgba($color: #000000, $alpha: .6);
+$standardFont: sans-serif;
+$standaardPadding: 30px;
+$borderRadius: 20px;
+
+@mixin mq_tablet {
+    @media (min-width: 700px) { 
+        @content; 
+    }    
+}
+
+@mixin mq_pc {
+    @media (min-width: 1024px) {
+        @content;
+    }
+    
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+@mixin social {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    color: #fff;
+}

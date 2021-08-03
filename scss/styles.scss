@@ -1,0 +1,21 @@
+@import './constants';
+@import './card';
+@import './grid';
+@import './social.scss';
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $primaryBackground;
+    font-family: $standardFont;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    color: $textColor;
+}
